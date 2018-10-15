@@ -1,0 +1,170 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #c8c8c8;
+}
+.top {
+  display: inline-block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.header {
+  display: block;
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+  float: left;
+  background-color: #a51417;
+  margin: 0px;
+}
+
+.header img {
+  padding-top: 10px;
+  display: block;
+}
+
+.header .hamburgerMenu {
+  float: left;
+  position: relative;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+}
+
+.hamburgerButton {
+  margin: 10px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.line {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: lightGray;
+  border-radius: 2px;
+  transition: all cubic-bezier(0.25, 0.1, 0.3, 1.5) 0.3s;
+}
+
+#hamburger:hover .line {
+  background-color: white;
+}
+
+.line1 {
+  top: 5%;
+}
+.line2 {
+  top: 43%;
+}
+.line3 {
+  top: 81%;
+}
+
+#hamburger {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#hamburger.close .line1 {
+  transform: rotate(45deg);
+  top: 48%;
+}
+
+#hamburger.close .line2, #hamburger.close .line3 {
+  transform: rotate(-45deg);
+  top: 48%;
+}
+
+#hamburger.close {
+  background-color: darkRed;
+}
+
+.header .searchButton {
+  float: right;
+  background-color: purple;
+  z-index: 7;
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  width: 100%;
+  display: block;
+  background-color: white;
+  height: 130px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0px;
+}
+
+.title h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 3.25vw;
+  line-height: 90px;
+  margin-left: 3%;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-top: 10px;
+}
+
+.nav {
+  background-color: #6c7373;
+
+}
+
+.video {
+  width: 100%;
+  max-width: 1230px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  margin-bottom: 1000px;
+
+}
+
+.center {
+  margin: 0 auto;
+  width: 1230px;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1230px;
+
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 950px) {
+  .header {
+    margin: 0px;
+  }
+  .header img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+  }
+
+  .title h1 {
+    font-size: 1.7em;
+    line-height: 1.1;
+    padding-top: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #hamburger {
+    visibility: visible;
+  }
+  .nav{
+    display: none;
+  }
+}

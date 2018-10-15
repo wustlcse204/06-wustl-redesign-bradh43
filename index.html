@@ -1,1 +1,94 @@
+<!doctype html>
+<!--
+Brad Hodkinson
+10/14/18
+CSE 204
+Assignment 06 WUSTL Redesign
+-->
 
+<!--
+Overall, your page should look as similar to Instagram as possible, and include
+the following elements:
+  {x} Header bar with logo, search box, and icons
+  {x} header does shrinking effect when you scroll
+  {x} search box should include background color change on "focus" but other
+     changes do not need to be re-created
+Main content area:
+  {x} Must contain 2 image posts with a caption
+  {x} Must contain "suggestions for you" section
+  {x} Sidebar with profile info, stories, and footer links.
+  {x} Make sure sidebar is stationary while you scroll on the page (may want to
+     look at position: sticky, but not necessary)
+  {x} Make sure stories area has too much content to fit and scrolls
+  {x} Your page should have responsive behavior like Instagram, where around
+     tablet size the sidebar disappears and the main section is centered. This
+     can be accomplished using Bootstrap or your own media queries.
+
+W3Schools Was Consulted for some syntax of CSS
+All images were retrieved from google images
+Icons were retrieved from flatIcon.com
+Fonts were retrieved from daFont.com
+-->
+
+<html>
+  <head>
+    <!-- Set the charachter code -->
+    <meta charset="UTF-8">
+    <!--  Make the webpage look good on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the shortcut icon image -->
+    <link rel="shortcut icon" type="icon" href="assets/icons/favicon.ico">
+    <!-- Give description of the website -->
+    <meta name="description" content="WUSTL Engineering Redesign">
+    <!-- Set keywords for the website -->
+    <meta name="keywords" content="WUSTL Redesign">
+    <!-- Set the author -->
+    <meta name="author" content="Brad Hodkinson">
+    <!-- link the custom style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript for hamburger menu -->
+    <script src="script.js"></script>
+    <!-- Set the tab title -->
+    <title>WUSTL Redesign</title>
+    <!-- phone: 500px, tablet: 950px, desktop: 1000px  -->
+  </head>
+  <body>
+    <div class="top">
+      <div class="header">
+        <div class="hamburgerMenu" id="hamburger">
+          <div class="hamburgerButton">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </div>
+        <img alt="WUSTL Header" src="assets/images/wustlHeader.png"/>
+        <div="searchButton">
+
+        </div>
+      <div class="title">
+          <h1>School of Engineering & Applied Science</h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mainContent">
+      <center>
+        <div class="video">
+          <center>
+            <video width="100%" height="100%" autoplay class="center">
+              <!-- <source src="assets/video/cseBackgroundRoll.mp4" type="video/mp4"
+              width="100px" height="100px" loop="loop" preload="preload"
+              autoplay="autoplay" unselectable="on" muted="muted"/> -->
+              <source src="assets/video/cseBackgroundRoll.mp4" type="video/mp4" autoplay="autoplay"/>
+              Browser unable to display video
+            </video>
+          </center>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>
