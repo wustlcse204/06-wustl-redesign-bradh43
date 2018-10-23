@@ -7,22 +7,28 @@ Assignment 06 WUSTL Redesign
 -->
 
 <!--
-Overall, your page should look as similar to Instagram as possible, and include
-the following elements:
-  {x} Header bar with logo, search box, and icons
-  {x} header does shrinking effect when you scroll
-  {x} search box should include background color change on "focus" but other
-     changes do not need to be re-created
-Main content area:
-  {x} Must contain 2 image posts with a caption
-  {x} Must contain "suggestions for you" section
-  {x} Sidebar with profile info, stories, and footer links.
-  {x} Make sure sidebar is stationary while you scroll on the page (may want to
-     look at position: sticky, but not necessary)
-  {x} Make sure stories area has too much content to fit and scrolls
-  {x} Your page should have responsive behavior like Instagram, where around
-     tablet size the sidebar disappears and the main section is centered. This
-     can be accomplished using Bootstrap or your own media queries.
+Requirements:
+{} Very clear primary and secondary audience (prospective students, current
+   students, parents, faculty/staff) with navigation and content tailored to
+   each.
+{} Calls to action along with all content (where it makes sense).
+{} Use design principles learned in class (Dominance, Similarity, Direction,
+   Rhythm, Contrast) to create visual hierarchy, consistent structure, and
+   pleasing aesthetics. Your site will be judged on how good it looks!
+{} Excellent grammar used, well written content (even if copied from existing
+   site).
+{} Relevant information displayed in an appropriate layout.
+{} Should have a variety of relevant content- paragraphs (about the department,
+   information for students, mission statement), lists (upcoming events,
+   application requirements, faculty/staff, etc), and tables (schedule,
+   tutoring hours, etc).
+{} Navigation is clear and easy to use.
+{} Very clean, professional design with at least 4 high quality, well placed
+   images. Design good enough to replace existing site, if not better.
+{} Mobile friendly! Your design must have at least one "breakpoint" where the
+   layout changes in some way to accommodate mobile devices. Make sure the site
+   looks good on smaller screens, points will be deducted if not!
+
 
 W3Schools Was Consulted for some syntax of CSS
 All images were retrieved from google images
@@ -60,34 +66,44 @@ Fonts were retrieved from daFont.com
             <span class="line line1"></span>
             <span class="line line2"></span>
             <span class="line line3"></span>
-          </div>
+          </div> <!-- Hamburger Button -->
+        </div> <!-- Hamburger Menu -->
+        <div class="imageContainer">
+          <img alt="WUSTL Header" src="assets/images/wustlHeader.png"/>
         </div>
-        <img alt="WUSTL Header" src="assets/images/wustlHeader.png"/>
-        <div="searchButton">
-
-        </div>
+        <div class="searchButton">
+          <img alt="Search" src="assets/icons/search.png"/>
+        </div> <!-- Search -->
+      </div> <!-- Header -->
       <div class="title">
           <h1>School of Engineering & Applied Science</h1>
-      </div>
-      <div class="nav">
+      </div> <!-- Title -->
+      <div class="nav" id="hamburgerMenu">
         <ul>
-          <li><a></a></li>
+          <li><a href="#">CSE AT WASHU</a></li>
+          <li><a href="#">FACULTY</a></li>
+          <li><a href="#">RESEARCH</a></li>
+          <li><a href="#">GRADUATE STUDENTS</a></li>
+          <li><a href="#">UNDERGRADUATE STUDENTS</a></li>
+          <li><a href="#">ALUMNI</a></li>
         </ul>
-      </div>
-    </div>
+      </div> <!-- Navigation items -->
+    </div> <!-- Top div -->
     <div class="mainContent">
       <center>
-        <div class="video">
+        <!-- <div class="video">
           <center>
             <video width="100%" height="100%" autoplay class="center">
-              <!-- <source src="assets/video/cseBackgroundRoll.mp4" type="video/mp4"
+              <source src="assets/video/cseBackgroundRoll.mp4" type="video/mp4"
               width="100px" height="100px" loop="loop" preload="preload"
-              autoplay="autoplay" unselectable="on" muted="muted"/> -->
+              autoplay="autoplay" unselectable="on" muted="muted"/>
               <source src="assets/video/cseBackgroundRoll.mp4" type="video/mp4" autoplay="autoplay"/>
               Browser unable to display video
             </video>
           </center>
         </div>
+        -->
+        <img src="assets/images/wustlLab.jpg" alt="WUSTL Campus">
       </center>
     </div>
   </body>

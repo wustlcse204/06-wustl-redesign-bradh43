@@ -14,6 +14,9 @@ window.onload = function() {
   document.querySelector("#hamburger").addEventListener('click', function(){
     this.classList.toggle('close');
   });
+  document.querySelector("#hamburgerMenu").addEventListener('click', function(){
+    this.classList.toggle('close');
+  });
 }
 // $(document).ready(function(){
 //   $("#hamburger").click(function(){
