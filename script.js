@@ -13,13 +13,10 @@
 window.onload = function() {
   document.querySelector("#hamburger").addEventListener('click', function(){
     this.classList.toggle('close');
+    document.querySelector("#hamburgerMenu").classList.toggle('close');
+
   });
-  document.querySelector("#hamburgerMenu").addEventListener('click', function(){
-    this.classList.toggle('close');
+  document.querySelector("#search").addEventListener('click', function(){
+    document.querySelector("#searchField").classList.toggle('open');
   });
 }
-// $(document).ready(function(){
-//   $("#hamburger").click(function(){
-//     $(".hamburgerButton").toggleClass("close");
-//   });
-// });

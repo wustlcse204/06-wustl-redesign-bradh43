@@ -8,24 +8,24 @@ Assignment 06 WUSTL Redesign
 
 <!--
 Requirements:
-{} Very clear primary and secondary audience (prospective students, current
+{x} Very clear primary and secondary audience (prospective students, current
    students, parents, faculty/staff) with navigation and content tailored to
    each.
-{} Calls to action along with all content (where it makes sense).
-{} Use design principles learned in class (Dominance, Similarity, Direction,
+{x} Calls to action along with all content (where it makes sense).
+{x} Use design principles learned in class (Dominance, Similarity, Direction,
    Rhythm, Contrast) to create visual hierarchy, consistent structure, and
    pleasing aesthetics. Your site will be judged on how good it looks!
-{} Excellent grammar used, well written content (even if copied from existing
+{x} Excellent grammar used, well written content (even if copied from existing
    site).
-{} Relevant information displayed in an appropriate layout.
-{} Should have a variety of relevant content- paragraphs (about the department,
+{x} Relevant information displayed in an appropriate layout.
+{x} Should have a variety of relevant content- paragraphs (about the department,
    information for students, mission statement), lists (upcoming events,
    application requirements, faculty/staff, etc), and tables (schedule,
    tutoring hours, etc).
-{} Navigation is clear and easy to use.
-{} Very clean, professional design with at least 4 high quality, well placed
+{x} Navigation is clear and easy to use.
+{x} Very clean, professional design with at least 4 high quality, well placed
    images. Design good enough to replace existing site, if not better.
-{} Mobile friendly! Your design must have at least one "breakpoint" where the
+{x} Mobile friendly! Your design must have at least one "breakpoint" where the
    layout changes in some way to accommodate mobile devices. Make sure the site
    looks good on smaller screens, points will be deducted if not!
 
@@ -71,21 +71,24 @@ Fonts were retrieved from daFont.com
         <div class="imageContainer">
           <img alt="WUSTL Header" src="assets/images/wustlHeader.png"/>
         </div>
-        <div class="searchButton">
+        <div class="searchButton" id="search">
           <img alt="Search" src="assets/icons/search.png"/>
         </div> <!-- Search -->
       </div> <!-- Header -->
+      <div class="searchBox" id="searchField">
+        <input/>
+      </div>
       <div class="title">
           <h1>School of Engineering & Applied Science</h1>
       </div> <!-- Title -->
       <div class="nav" id="hamburgerMenu">
         <ul>
-          <li><a href="#">CSE AT WASHU</a></li>
-          <li><a href="#">FACULTY</a></li>
-          <li><a href="#">RESEARCH</a></li>
-          <li><a href="#">GRADUATE STUDENTS</a></li>
-          <li><a href="#">UNDERGRADUATE STUDENTS</a></li>
-          <li><a href="#">ALUMNI</a></li>
+          <li><a href="https://cse.wustl.edu/cseatwashu/Pages/default.aspx">CSE AT WASHU</a></li>
+          <li><a href="https://cse.wustl.edu/faculty/Pages/default.aspx">FACULTY</a></li>
+          <li><a href="https://cse.wustl.edu/research/Pages/default.aspx">RESEARCH</a></li>
+          <li><a href="https://cse.wustl.edu/graduate/Pages/default.aspx">GRADUATE STUDENTS</a></li>
+          <li><a href="https://cse.wustl.edu/undergraduate/Pages/default.aspx">UNDERGRADUATE STUDENTS</a></li>
+          <li><a href="https://cse.wustl.edu/alumni/Pages/default.aspx">ALUMNI</a></li>
         </ul>
       </div> <!-- Navigation items -->
     </div> <!-- Top div -->
@@ -104,7 +107,91 @@ Fonts were retrieved from daFont.com
         </div>
         -->
         <img src="assets/images/wustlLab.jpg" alt="WUSTL Campus">
+        <div class="missionStatement">
+          <p><strong>Mission: </strong> The purpose of the Washington University in St.
+            Louis Computer Science and Engineering is to represent all the
+            students of our department. We promote interaction amongst students,
+             collegiate activities and, when possible, address the needs and
+             concerns of our fellow students.</p>
+        </div>
       </center>
+      <div class="body">
+        <div class="column-body">
+          <div class="column-item" id="left-column">
+            <h1>Engineer your way. Engineer at WashU.</h1>
+            <p>Computer scientists & computer engineers at WashU are driving the
+              frontier of computing forward and developing innovative ways to
+              transform society.</p>
+              <a href="https://engineering.wustl.edu/news/Pages/Machine-learning-used-for-helping-farmers-select-optimal-products-suited-for-their-operation.aspx">
+                <img alt="grass field" src="assets/images/grassField.jpg"/>
+                <div class="imageMessage">
+                  <p>Machine learning used for helping farmers select optimal
+                    products suited for their operation.</p>
+                    <h2>READ THE STORY</h2>
+                </div>
+              </a>
+          </div>
+          <div class="column-item" id="right-column">
+              <h1>Events</h1>
+              <hr>
+              <a href="https://cse.wustl.edu/cseatwashu/events/Pages/default.aspx?eventid=1751">
+                <div class="event">
+                  <p><strong>NOV 2:</strong> CSE Doctoral Student Seminar: Jason Granstedt and Yehan Ma</p>
+                </div>
+              </a>
+              <a href="https://cse.wustl.edu/cseatwashu/events/Pages/default.aspx?eventid=1734">
+                <div class="event">
+                  <p><strong>NOV 2:</strong> Colloquia Series-Joshua Levine</p>
+                </div>
+              </a>
+              <a href="https://cse.wustl.edu/cseatwashu/events/Pages/default.aspx?eventid=1726">
+                <div class="event">
+                  <p><strong>NOV 16:</strong> Colloquia Series-Alec Koppel</p>
+                </div>
+              </a>
+
+          </div>
+        </div>
+        <div class="social-media-bar">
+          <p>Across Disciplines. Across the World.</p>
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/washuengineering"><img alt="facebook" src="assets/icons/facebook.png"/></a>
+            <a href="https://twitter.com/WashUengineers"><img alt="twitter" src="assets/icons/twitter.png"/></a>
+            <a href="https://instagram.com/washuengineers"><img alt="instagram" src="assets/icons/instagram.png"/></a>
+            <a href="https://www.youtube.com/WashUEngineering"><img alt="youtube" src="assets/icons/youtube.png"/></a>
+            <a href="https://www.linkedin.com/company/washu-engineering"><img alt="linkedin" src="assets/icons/linkedin.png"/></a>
+          </div>
+        </div>
+        <div class="page-footer">
+          <div class="footer-actions">
+            <div class="footer-icons">
+
+            </div>
+            <h2>Washington University in St. Louis</h2>
+          </div>
+          <div class="footer-information">
+            <div class="departments">
+              <h2>OUR DEPARTMENTS</h2>
+              <a href="https://bme.wustl.edu/"><p>Biomedical Engineering</p></a>
+              <a href="https://cse.wustl.edu/"><p>Computer Science & Engineering</p></a>
+              <a href="https://ese.wustl.edu/"><p>Electrical & Systems Engineering</p></a>
+              <a href="https://eece.wustl.edu/"><p>Energy, Enviromental & Chemical Engineering</p></a>
+              <a href="https://mems.wustl.edu/"><p>Mechanical Engineering & Materials Science</p></a>
+              <a href="https://sever.wustl.edu/"><p>Professional Education</p></a>
+            </div>
+            <div class="resources">
+              <a href="https://engineering.wustl.edu/our-school/Pages/resources.aspx"><h2>RESOURCES</h2></a>
+              <a href="https://engineering.wustl.edu/our-school/why-wash-u-engineering/Pages/visit.aspx"><p>Maps & Directions</p></a>
+              <a href="https://emergency.wustl.edu/"><p>Emergency Management</p></a>
+              <a href="https://blackboard.wustl.edu/"><p>Blackboard</p></a>
+              <a href="https://engineering.wustl.edu/our-school/Pages/directory.aspx"><p>Directory</p></a>
+              <a href="https://engineering.wustl.edu/our-school/leadership/offices/engineering-it/Pages/default.aspx"><p>Engineering IT</p></a>
+              <p><a href="https://connect.wustl.edu/ssoportal">Student Email</a> / <a href="https://email.wustl.edu/">Staff Email</a></p>
+              <p><a href="https://acadinfo.wustl.edu/webfac/WebFAC.asp">WebFAC</a> / <a href="https://acadinfo.wustl.edu/">WebSTAC</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
